@@ -16,6 +16,4 @@ shape = SubResource("RectangleShape2D_f1n02")
 scale = Vector2(0.203125, 0.03125)
 texture = ExtResource("1_whldl")
 
-[node name="Cd" type="Timer" parent="."]
-
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -5,36 +5,43 @@ var speed = 800
 var direction = Vector2.ZERO
 var is_active = false
 
-# Referencia a los bordes de la pantalla
-var screen_size
+# Duración máxima de vida de la bala (en segundos)
+@export var bullet_lifetime = 0.5  # Puedes ajustar el tiempo de vida de la bala aquí
 
 func _ready():
 	# Configurar el tamaño de la pantalla
-	screen_size = get_viewport_rect().size
-	hide() # Ocultar la bala por defecto
+	is_active = false
+	hide()  # Ocultar la bala por defecto
 
 # Función que activa la bala y le da dirección
 func shoot(direction_vector):
 	direction = direction_vector.normalized()
 	is_active = true
-	position = get_parent().get_node("Player").position # Empieza desde el player
-	show() # Mostrar la bala cuando se dispara
+	position = get_parent().get_node("Player").position  # Empieza desde el player
+	show()  # Mostrar la bala cuando se dispara
 	
+	# Iniciar el temporizador para el tiempo de vida de la bala
+	var timer = Timer.new()
+	add_child(timer)
+	timer.wait_time = bullet_lifetime
+	timer.one_shot = true
+	timer.connect("timeout", Callable(self, "_disappear"))  # Usar Callable en lugar del método antiguo
+	timer.start()
 
 func _process(delta):
 	if is_active:
 		# Mover la bala en la dirección establecida
 		position += direction * speed * delta
-		
-		# Si la bala sale de la pantalla, desaparece
-		if position.x > screen_size.x or position.y > screen_size.y:
-			_disappear()
 
+		# Si la bala sale de los bordes de la pantalla, desaparece
+
+# Función para desaparecer la bala cuando entra en contacto con un área
 func _on_area_entered(area: Area2D) -> void:
-	_disappear()
-	
-# Función para desaparecer la bala
+	if area.is_in_group("enemies"):
+		_disappear()
+
+# Función para hacer que la bala desaparezca
 func _disappear():
 	hide()
 	is_active = false
-	queue_free() # Eliminar la bala una vez ha desaparecido
+	queue_free()  # Eliminar la bala una vez ha desaparecido

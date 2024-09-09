@@ -1,1 +1,7 @@
+res://scenes/enemies/enemy.tscn
+res://scripts/enemies/enemy.gd
 res://scenes/levels/world.tscn
+res://scenes/player/player.tscn
+res://scenes/weapons/bullets/bullet.tscn
+res://scenes/weapons/bullets/bullet.gd
+res://scripts/player/player.gd

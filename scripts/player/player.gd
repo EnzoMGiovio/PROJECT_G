@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-
-
 @export var bullet_scene = preload("res://scenes/weapons/bullets/bullet.tscn")
 
 # Called when the node enters the scene tree for the first time.
