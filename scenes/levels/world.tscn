@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5d8un6w3et5p"]
+
+[ext_resource type="Texture2D" uid="uid://2xsbg65bo6ym" path="res://assets/image/world/grass wehicles other.jpg" id="1_dgfl4"]
+[ext_resource type="PackedScene" uid="uid://gh5o5euu1vc2" path="res://scenes/player/player.tscn" id="2_a5b5c"]
+[ext_resource type="PackedScene" uid="uid://bm8mb1ckbofin" path="res://scenes/enemies/enemy.tscn" id="3_kvvqx"]
+
+[node name="World" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(534, 269)
+texture = ExtResource("1_dgfl4")
+
+[node name="Player" parent="." instance=ExtResource("2_a5b5c")]
+position = Vector2(598, 251)
+
+[node name="Enemy" parent="." instance=ExtResource("3_kvvqx")]
+position = Vector2(338, 321)
+
+[node name="Enemy2" parent="." instance=ExtResource("3_kvvqx")]
+position = Vector2(863, 57)
+
+[node name="Enemy3" parent="." instance=ExtResource("3_kvvqx")]
+position = Vector2(333, 57)

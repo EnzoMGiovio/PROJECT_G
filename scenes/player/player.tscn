@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://gh5o5euu1vc2"]
+
+[ext_resource type="Texture2D" uid="uid://cjd7b27ln2mtc" path="res://assets/player/survivor-idle_handgun_0.png" id="1_ud5xw"]
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_wme2w"]
+[ext_resource type="PackedScene" uid="uid://0bnej02ufic6" path="res://scenes/weapons/bullets/bullet.tscn" id="3_jh5hq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2wwoq"]
+radius = 83.0241
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_wme2w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ud5xw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2wwoq")
+
+[node name="bullet" parent="." instance=ExtResource("3_jh5hq")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
