@@ -1,7 +1,7 @@
-Node
 CollisionShape2D
-Timer
 Area2D
+Node
+Timer
 Sprite2D
 CharacterBody2D
 Camera2D

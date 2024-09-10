@@ -11,16 +11,16 @@ grass wehicles other.jpg::CompressedTexture2D::1943674522627974200::1725826042::
 ::res://assets/player/::1725822235
 survivor-idle_handgun_0.png::CompressedTexture2D::5412680291035537600::1725822235::1725822235::1::::<><>::
 ::res://scenes/::1725826444
-::res://scenes/enemies/::1725915688
-enemy.tscn::PackedScene::3297543032093524209::1725915688::0::1::::<><>::uid://b2xkcfjpch7uq::::res://assets/enemies/Lord Fardquaad.png<>res://scripts/enemies/enemy.gd
-::res://scenes/levels/::1725915688
-world.tscn::PackedScene::6886739918158409911::1725915688::0::1::::<><>::res://scripts/levels/1/world1.gd<>uid://2xsbg65bo6ym::::res://assets/image/world/grass wehicles other.jpg<>uid://gh5o5euu1vc2::::res://scenes/player/player.tscn<>uid://bm8mb1ckbofin::::res://scenes/enemies/enemy.tscn
-::res://scenes/player/::1725915939
-player.tscn::PackedScene::437431799820478659::1725915939::0::1::::<><>::uid://cjd7b27ln2mtc::::res://assets/player/survivor-idle_handgun_0.png<>res://scripts/player/player.gd<>uid://0bnej02ufic6::::res://scenes/weapons/bullets/bullet.tscn
+::res://scenes/enemies/::1725987769
+enemy.tscn::PackedScene::3297543032093524209::1725987769::0::1::::<><>::uid://b2xkcfjpch7uq::::res://assets/enemies/Lord Fardquaad.png<>res://scripts/enemies/enemy.gd
+::res://scenes/levels/::1725987769
+world.tscn::PackedScene::6886739918158409911::1725987769::0::1::::<><>::res://scripts/levels/1/world1.gd<>uid://2xsbg65bo6ym::::res://assets/image/world/grass wehicles other.jpg<>uid://gh5o5euu1vc2::::res://scenes/player/player.tscn<>uid://bm8mb1ckbofin::::res://scenes/enemies/enemy.tscn
+::res://scenes/player/::1725988206
+player.tscn::PackedScene::437431799820478659::1725988206::0::1::::<><>::uid://cjd7b27ln2mtc::::res://assets/player/survivor-idle_handgun_0.png<>res://scripts/player/player.gd<>uid://0bnej02ufic6::::res://scenes/weapons/bullets/bullet.tscn
 ::res://scenes/weapons/::1725823615
-::res://scenes/weapons/bullets/::1725915688
+::res://scenes/weapons/bullets/::1725987769
 bullet.gd::GDScript::-1::1725892650::0::1::::<>Area2D<>::
-bullet.tscn::PackedScene::1757582445370403723::1725915688::0::1::::<><>::res://scenes/weapons/bullets/bullet.gd<>uid://bqhx7yugyo8cb::::res://icon.svg
+bullet.tscn::PackedScene::1757582445370403723::1725987769::0::1::::<><>::res://scenes/weapons/bullets/bullet.gd<>uid://bqhx7yugyo8cb::::res://icon.svg
 ::res://scripts/::1725915469
 ::res://scripts/enemies/::1725890677
 enemy.gd::GDScript::-1::1725890677::0::1::::<>CharacterBody2D<>::

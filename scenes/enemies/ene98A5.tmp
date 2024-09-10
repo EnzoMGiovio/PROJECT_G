@@ -16,7 +16,7 @@ size = Vector2(73, 135)
 radius = 27.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jphr6"]
-radius = 175.506
+radius = 156.597
 
 [node name="Enemy" type="CharacterBody2D" groups=["enemies"]]
 script = ExtResource("1_mke6b")
@@ -53,7 +53,7 @@ script = ExtResource("6_vt2lc")
 script = ExtResource("7_httns")
 
 [node name="DetectionArea" type="Area2D" parent="."]
-collision_layer = 0
+collision_layer = 2
 script = ExtResource("8_7hquy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]

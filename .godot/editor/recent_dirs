@@ -1,3 +1,5 @@
+res://scripts/EnemyStateMachine
+res://scripts/PlayerStatesMachine
 res://scripts/levels/1
 res://scripts/enemies
 res://scenes/enemies
