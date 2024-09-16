@@ -28,7 +28,7 @@ func _ready() -> void:
 	interaction_area.connect("area_exited", Callable(self, "_on_interaction_area_exited"))
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_cancel"):  # Usualmente la tecla Esc
+	if event.is_action_pressed("aim_mode"):  # Usualmente la tecla Esc
 		set_mouse_capture(!capture_mouse)
 	state_machine.handle_input(event)
 	

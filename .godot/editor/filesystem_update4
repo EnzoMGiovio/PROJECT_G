@@ -1,4 +1,8 @@
-res://scenes/player/player.tscn
-res://scripts/player/player.gd
 res://scenes/levels/world.tscn
+res://scenes/ui_menu/pause_menu.tscn
+res://scenes/player/player.tscn
+res://scripts/inventory/Inventory.gd
+res://scripts/player/player.gd
+res://scripts/PlayerStatesMachine/InteractState.gd
+res://scripts/PlayerStatesMachine/InventoryState.gd
 res://scenes/objects/object_test_1.tscn

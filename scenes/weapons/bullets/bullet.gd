@@ -11,7 +11,8 @@ var is_active = false
 func _ready():
 	# Configurar el tamaño de la pantalla
 	is_active = false
-	hide()  # Ocultar la bala por defecto
+	hide()
+	$CollisionShape2D.set_deferred("disabled", true)
 
 # Función que activa la bala y le da dirección
 func shoot(direction_vector):
@@ -19,6 +20,7 @@ func shoot(direction_vector):
 	is_active = true
 	position = get_parent().get_node("Player").position  # Empieza desde el player
 	show()  # Mostrar la bala cuando se dispara
+	$CollisionShape2D.set_deferred("disabled", false)
 	
 	# Iniciar el temporizador para el tiempo de vida de la bala
 	var timer = Timer.new()
@@ -44,4 +46,5 @@ func _on_area_entered(area: Area2D) -> void:
 func _disappear():
 	hide()
 	is_active = false
+	$CollisionShape2D.set_deferred("disabled", false)
 	queue_free()  # Eliminar la bala una vez ha desaparecido

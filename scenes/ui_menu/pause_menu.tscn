@@ -1,0 +1,97 @@
+[gd_scene load_steps=3 format=3 uid="uid://cadvg01oeqs4b"]
+
+[ext_resource type="FontFile" uid="uid://rwfwal0fowu2" path="res://assets/fonts/noto_serif/NotoSerif-VariableFont_wdth,wght.ttf" id="1_ishxl"]
+[ext_resource type="Script" path="res://scripts/ui_menu/pause_menu/pause_menu.gd" id="1_poh3u"]
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_poh3u")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.0980392)
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UpperBar" type="HBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(1150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="Satus" type="Label" parent="PanelContainer/UpperBar"]
+layout_mode = 2
+text = "STATUS"
+
+[node name="Equipment" type="Label" parent="PanelContainer/UpperBar"]
+layout_mode = 2
+text = "EQUIPMENT"
+
+[node name="Command" type="Label" parent="PanelContainer/UpperBar"]
+layout_mode = 2
+text = "COMMAND"
+
+[node name="LowerBar" type="HBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(1150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="Option" type="Button" parent="PanelContainer/LowerBar"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ishxl")
+theme_override_font_sizes/font_size = 24
+text = "OPTION"
+
+[node name="Memo" type="Button" parent="PanelContainer/LowerBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ishxl")
+theme_override_font_sizes/font_size = 24
+text = "MEMO"
+
+[node name="Map" type="Button" parent="PanelContainer/LowerBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ishxl")
+theme_override_font_sizes/font_size = 24
+text = "MAP"
+
+[node name="CommandButtons" type="VBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(380, 250)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+alignment = 1
+
+[node name="Button" type="Button" parent="PanelContainer/CommandButtons"]
+layout_mode = 2
+text = "USE"
+
+[node name="Button2" type="Button" parent="PanelContainer/CommandButtons"]
+layout_mode = 2
+text = "EQUIP"
+
+[node name="Button3" type="Button" parent="PanelContainer/CommandButtons"]
+layout_mode = 2
+text = "RELOAD"

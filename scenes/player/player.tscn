@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://gh5o5euu1vc2"]
+[gd_scene load_steps=13 format=3 uid="uid://gh5o5euu1vc2"]
 
 [ext_resource type="Texture2D" uid="uid://cjd7b27ln2mtc" path="res://assets/player/survivor-idle_handgun_0.png" id="1_ud5xw"]
 [ext_resource type="Script" path="res://scripts/player/player.gd" id="1_wme2w"]
@@ -17,6 +17,8 @@ radius = 110.164
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_08nyu"]
 radius = 132.015
+
+[sub_resource type="GDScript" id="GDScript_utgc7"]
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 scale = Vector2(0.5, 0.5)
@@ -65,6 +67,9 @@ shape = SubResource("CircleShape2D_08nyu")
 [node name="DamageCooldownTimer" type="Timer" parent="."]
 one_shot = true
 autostart = true
+
+[node name="Inventory" type="Node" parent="."]
+script = SubResource("GDScript_utgc7")
 
 [connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="timeout" from="DamageCooldownTimer" to="." method="_on_damage_cooldown_timer_timeout"]

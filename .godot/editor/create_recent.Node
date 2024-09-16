@@ -1,7 +1,14 @@
+Node
+CanvasLayer
+ColorRect
+Button
+VBoxContainer
+Label
+HBoxContainer
+PanelContainer
 Timer
 CollisionShape2D
 Area2D
-Node
 Sprite2D
 CharacterBody2D
 Camera2D
