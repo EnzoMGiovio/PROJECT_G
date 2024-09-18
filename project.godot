@@ -15,6 +15,14 @@ run/main_scene="res://scenes/levels/world.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://assets/": "green",
+"res://scenes/": "blue",
+"res://scripts/": "pink"
+}
+
 [global_group]
 
 enemies="enemies_group"

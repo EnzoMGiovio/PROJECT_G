@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726494772
+::res://::1726661691
 icon.svg::CompressedTexture2D::3525347754180387833::1725633027::1725633046::1::::<><>::
 README.md::TextFile::-1::1725633292::0::1::::<><>::
 ::res://assets/::1726236486
@@ -110,19 +110,19 @@ survivor-idle_handgun_0.png::CompressedTexture2D::5412680291035537600::172582223
 ::res://scenes/::1726234452
 ::res://scenes/enemies/::1726063970
 enemy.tscn::PackedScene::3297543032093524209::1726063970::0::1::::<><>::uid://b2xkcfjpch7uq::::res://assets/enemies/Lord Fardquaad.png<>res://scripts/enemies/enemy.gd<>res://scripts/EnemyStateMachine/EnemyStateMachine.gd<>res://scripts/EnemyStateMachine/IdleState.gd<>res://scripts/EnemyStateMachine/ChaseState.gd<>res://scripts/EnemyStateMachine/HurtState.gd<>res://scripts/EnemyStateMachine/DeathState.gd<>res://scripts/EnemyStateMachine/DetectionArea.gd
-::res://scenes/levels/::1726510588
-world.tscn::PackedScene::6886739918158409911::1726510588::0::1::::<><>::res://scripts/levels/1/world1.gd<>uid://2xsbg65bo6ym::::res://assets/image/world/grass wehicles other.jpg<>uid://gh5o5euu1vc2::::res://scenes/player/player.tscn<>uid://bm8mb1ckbofin::::res://scenes/enemies/enemy.tscn<>uid://bwv8uvfs1pva5::::res://scenes/objects/object_test_1.tscn<>uid://cadvg01oeqs4b::::res://scenes/ui_menu/pause_menu.tscn
-::res://scenes/objects/::1726234173
-object_test_1.tscn::PackedScene::3975967664772031370::1726234173::0::1::::<><>::res://scripts/objects/object_test_1.gd
-::res://scenes/player/::1726508769
-player.tscn::PackedScene::437431799820478659::1726508769::0::1::::<><>::uid://cjd7b27ln2mtc::::res://assets/player/survivor-idle_handgun_0.png<>res://scripts/player/player.gd<>uid://0bnej02ufic6::::res://scenes/weapons/bullets/bullet.tscn<>res://scripts/PlayerStatesMachine/StateMachine.gd<>res://scripts/PlayerStatesMachine/IdleState.gd<>res://scripts/PlayerStatesMachine/WalkState.gd<>res://scripts/PlayerStatesMachine/AttackState.gd<>res://scripts/PlayerStatesMachine/InteractState.gd
+::res://scenes/levels/::1726520119
+world.tscn::PackedScene::6886739918158409911::1726520119::0::1::::<><>::res://scripts/levels/1/world1.gd<>uid://2xsbg65bo6ym::::res://assets/image/world/grass wehicles other.jpg<>uid://gh5o5euu1vc2::::res://scenes/player/player.tscn<>uid://bm8mb1ckbofin::::res://scenes/enemies/enemy.tscn<>uid://bwv8uvfs1pva5::::res://scenes/objects/object_test_1.tscn<>uid://cadvg01oeqs4b::::res://scenes/ui_menu/pause_menu.tscn
+::res://scenes/objects/::1726520052
+object_test_1.tscn::PackedScene::3975967664772031370::1726520052::0::1::::<><>::res://scripts/objects/object_test_1.gd
+::res://scenes/player/::1726524910
+player.tscn::PackedScene::437431799820478659::1726524910::0::1::::<><>::uid://cjd7b27ln2mtc::::res://assets/player/survivor-idle_handgun_0.png<>res://scripts/player/player.gd<>uid://0bnej02ufic6::::res://scenes/weapons/bullets/bullet.tscn<>res://scripts/PlayerStatesMachine/StateMachine.gd<>res://scripts/PlayerStatesMachine/IdleState.gd<>res://scripts/PlayerStatesMachine/WalkState.gd<>res://scripts/PlayerStatesMachine/AttackState.gd<>res://scripts/PlayerStatesMachine/InteractState.gd
 ::res://scenes/ui_menu/::1726508769
 pause_menu.tscn::PackedScene::4780321626150666915::1726508769::0::1::::<><>::uid://rwfwal0fowu2::::res://assets/fonts/noto_serif/NotoSerif-VariableFont_wdth,wght.ttf<>res://scripts/ui_menu/pause_menu/pause_menu.gd
 ::res://scenes/weapons/::1725823615
 ::res://scenes/weapons/bullets/::1726234173
 bullet.gd::GDScript::-1::1726233895::0::1::::<>Area2D<>::
 bullet.tscn::PackedScene::1757582445370403723::1726234173::0::1::::<><>::res://scenes/weapons/bullets/bullet.gd<>uid://bqhx7yugyo8cb::::res://icon.svg
-::res://scripts/::1726237033
+::res://scripts/::1726511210
 ::res://scripts/enemies/::1725993335
 enemy.gd::GDScript::-1::1725993334::0::1::::<>CharacterBody2D<>::
 ::res://scripts/EnemyStateMachine/::1726062775
@@ -133,24 +133,27 @@ EnemyState.gd::GDScript::-1::1725990660::0::1::::EnemyState<>Node<>::
 EnemyStateMachine.gd::GDScript::-1::1725990614::0::1::::<>Node<>::
 HurtState.gd::GDScript::-1::1725993349::0::1::::<>EnemyState<>::
 IdleState.gd::GDScript::-1::1725990745::0::1::::<>EnemyState<>::
+::res://scripts/inventory/::1726519785
 ::res://scripts/levels/::1725915472
 ::res://scripts/levels/1/::1725915478
 world1.gd::GDScript::-1::1725915478::0::1::::<>Node2D<>::
 ::res://scripts/objects/::1726080248
 Interactable.gd::GDScript::-1::1726079612::0::1::::<>Node<>::
 object_test_1.gd::GDScript::-1::1726080248::0::1::::<>Node2D<>::
-::res://scripts/player/::1726238524
-player.gd::GDScript::-1::1726238524::0::1::::<>CharacterBody2D<>::
-::res://scripts/PlayerStatesMachine/::1726080230
+::res://scripts/player/::1726521669
+player.gd::GDScript::-1::1726521669::0::1::::Player<>CharacterBody2D<>::
+::res://scripts/PlayerStatesMachine/::1726523768
 AttackState.gd::GDScript::-1::1725989787::0::1::::<>State<>::
 IdleState.gd::GDScript::-1::1725989723::0::1::::<>State<>::
-InteractState.gd::GDScript::-1::1726080230::0::1::::<>State<>::
-State.gd::GDScript::-1::1725989581::0::1::::State<>Node<>::
+InteractState.gd::GDScript::-1::1726512931::0::1::::<>State<>::
+State.gd::GDScript::-1::1726523768::0::1::::State<>Node<>::
 StateMachine.gd::GDScript::-1::1725989836::0::1::::<>Node<>::
 WalkState.gd::GDScript::-1::1725989759::0::1::::<>State<>::
 ::res://scripts/ui_menu/::1726237038
 ::res://scripts/ui_menu/pause_menu/::1726238554
 pause_menu.gd::GDScript::-1::1726238554::0::1::::<>Control<>::
-::res://scripts/weapons/::1725824325
+::res://scripts/weapons/::1726523679
 ::res://scripts/weapons/bullets/::1725827513
 bullet.gd::GDScript::-1::1725827513::0::1::::<>Area2D<>::
+::res://scripts/weapons/weapons_classes/::1726524910
+Weapon.gd::GDScript::-1::1726524910::0::1::::Weapon<>Node2D<>::

@@ -1,6 +1,8 @@
 # Player.gd
 extends CharacterBody2D
 
+class_name Player
+
 @export var bullet_scene = preload("res://scenes/weapons/bullets/bullet.tscn")
 @export var movement_speed: float = 200.0
 @export var rotation_speed: float = 10.0
